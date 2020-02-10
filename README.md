@@ -10,6 +10,7 @@ Here, at e2y, we work following the `BDD` (Behaviour Driven Development) process
 However, feel free to use any framework in any language.
 
 Please, place your code under `tests` in the root directory.
+Besides, evaluate which cases are worthy to be automated or not.
 
 Remember, we are developers! Not only do we worry about the quality of the application but also the quality of the code ;)
 
