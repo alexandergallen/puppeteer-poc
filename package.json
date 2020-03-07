@@ -9,6 +9,7 @@
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "moxios": "^0.4.0",
+    "puppeteer": "^2.1.1",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-redux": "^5.1.1",
@@ -19,7 +20,7 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"react-scripts start\"",
     "server": "nodemon server/app",
-    "test": "cucumber-js"
+    "test": "cucumber-js ./tests/features -r ./tests/features/step_definitions"
   },
   "browserslist": [
     ">0.2%",
