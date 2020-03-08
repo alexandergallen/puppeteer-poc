@@ -5,8 +5,10 @@
   "dependencies": {
     "axios": "^0.18.1",
     "babel-polyfill": "^6.26.0",
+    "chai": "^4.2.0",
     "concurrently": "^4.0.1",
     "cors": "^2.8.5",
+    "cucumber-html-reporter": "^5.1.0",
     "express": "^4.16.4",
     "moxios": "^0.4.0",
     "puppeteer": "^2.1.1",
@@ -20,7 +22,9 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"react-scripts start\"",
     "server": "nodemon server/app",
-    "test": "cucumber-js ./tests/features -r ./tests/features/step_definitions"
+    "test": "cucumber-js ./tests/features -r ./tests/features/step_definitions -f json:cucumber-report.json",
+    "testdocker": "cucumber-js --world-parameters {\\\"port\\\":\\\"3001\\\"} ./tests/features -r ./tests/features/step_definitions -f json:cucumber-report.json",
+    "report": "node report.js"
   },
   "browserslist": [
     ">0.2%",

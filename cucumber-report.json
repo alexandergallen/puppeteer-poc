@@ -1,0 +1,1147 @@
+[
+  {
+    "description": "    Validation of cart functionality",
+    "keyword": "Feature",
+    "name": "Cart",
+    "line": 1,
+    "id": "cart",
+    "tags": [],
+    "uri": "tests\\features\\cart.feature",
+    "elements": [
+      {
+        "id": "cart;delete-item-from-cart",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Delete item from cart",
+        "tags": [
+          {
+            "name": "@only",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 170000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have opened \"http://localhost\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:41"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4033000000,
+              "error_message": "Error: net::ERR_CONNECTION_REFUSED at http://localhost:3001\n    at navigate (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:120:37)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)\n    at async FrameManager.navigateFrame (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:94:17)\n    at async Frame.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:406:12)\n    at async Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:12)\n    at async World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:111:15)\n    at Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:49)\n    at Page.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:112:23)\n    at World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I have added an item to the cart",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:111"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I open the cart",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:140"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I delete the item",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:121"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "The cart is empty",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:128"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 109000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cart;cart-contains-correct-items",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Cart contains correct items",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 149000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have opened \"http://localhost\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:41"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4030000000,
+              "error_message": "Error: net::ERR_CONNECTION_REFUSED at http://localhost:3001\n    at navigate (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:120:37)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)\n    at async FrameManager.navigateFrame (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:94:17)\n    at async Frame.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:406:12)\n    at async Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:12)\n    at async World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:111:15)\n    at Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:49)\n    at Page.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:112:23)\n    at World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I have added an item to the cart",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:111"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I open the cart",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:140"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "The cart contains the correct item",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:146"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 109000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cart;modify-quantity-of-item-in-cart",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Modify quantity of item in cart",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 151000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have opened \"http://localhost\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:41"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4025000000,
+              "error_message": "Error: net::ERR_CONNECTION_REFUSED at http://localhost:3001\n    at navigate (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:120:37)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)\n    at async FrameManager.navigateFrame (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:94:17)\n    at async Frame.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:406:12)\n    at async Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:12)\n    at async World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:111:15)\n    at Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:49)\n    at Page.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:112:23)\n    at World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I have added an item to the cart",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:111"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I open the cart",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:140"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I add one more of the item",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:157"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "There is \"2\" of the item",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:172"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I remove one piece of the item",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:164"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "There is \"1\" of the item",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:172"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 108000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cart;checkout-cart",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Checkout cart",
+        "tags": [
+          {
+            "name": "@only",
+            "line": 22
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 151000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have opened \"http://localhost\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:41"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4027000000,
+              "error_message": "Error: net::ERR_CONNECTION_REFUSED at http://localhost:3001\n    at navigate (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:120:37)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)\n    at async FrameManager.navigateFrame (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:94:17)\n    at async Frame.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:406:12)\n    at async Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:12)\n    at async World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:111:15)\n    at Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:49)\n    at Page.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:112:23)\n    at World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "I have added an item to the cart",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:111"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I open the cart",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:140"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "Click on Checkout",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:179"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "Checkout works",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:188"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 202000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    Validation of filtering functionality",
+    "keyword": "Feature",
+    "name": "Filtering",
+    "line": 1,
+    "id": "filtering",
+    "tags": [],
+    "uri": "tests\\features\\filtering.feature",
+    "elements": [
+      {
+        "id": "filtering;filter-items-by-size",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Filter items by size",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 162000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have opened \"http://localhost\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:41"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4031000000,
+              "error_message": "Error: net::ERR_CONNECTION_REFUSED at http://localhost:3001\n    at navigate (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:120:37)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)\n    at async FrameManager.navigateFrame (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:94:17)\n    at async Frame.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:406:12)\n    at async Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:12)\n    at async World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:111:15)\n    at Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:49)\n    at Page.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:112:23)\n    at World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I have filtered the items by size \"XS\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:85"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I add the items to cart",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:93"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The items have the correct size \"XS\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:98"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 201000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "filtering;filter-items-by-size",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Filter items by size",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 186000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have opened \"http://localhost\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:41"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4027000000,
+              "error_message": "Error: net::ERR_CONNECTION_REFUSED at http://localhost:3001\n    at navigate (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:120:37)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)\n    at async FrameManager.navigateFrame (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:94:17)\n    at async Frame.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:406:12)\n    at async Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:12)\n    at async World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:111:15)\n    at Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:49)\n    at Page.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:112:23)\n    at World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I have filtered the items by size \"S\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:85"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I add the items to cart",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:93"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The items have the correct size \"S\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:98"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 205000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "filtering;filter-items-by-size",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Filter items by size",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 162000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have opened \"http://localhost\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:41"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4026000000,
+              "error_message": "Error: net::ERR_CONNECTION_REFUSED at http://localhost:3001\n    at navigate (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:120:37)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)\n    at async FrameManager.navigateFrame (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:94:17)\n    at async Frame.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:406:12)\n    at async Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:12)\n    at async World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:111:15)\n    at Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:49)\n    at Page.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:112:23)\n    at World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I have filtered the items by size \"M\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:85"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I add the items to cart",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:93"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The items have the correct size \"M\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:98"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 206000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "filtering;filter-items-by-size",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Filter items by size",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 175000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have opened \"http://localhost\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:41"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4028000000,
+              "error_message": "Error: net::ERR_CONNECTION_REFUSED at http://localhost:3001\n    at navigate (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:120:37)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)\n    at async FrameManager.navigateFrame (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:94:17)\n    at async Frame.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:406:12)\n    at async Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:12)\n    at async World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:111:15)\n    at Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:49)\n    at Page.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:112:23)\n    at World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I have filtered the items by size \"ML\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:85"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I add the items to cart",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:93"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The items have the correct size \"ML\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:98"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 207000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "filtering;filter-items-by-size",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Filter items by size",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 181000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have opened \"http://localhost\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:41"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4026000000,
+              "error_message": "Error: net::ERR_CONNECTION_REFUSED at http://localhost:3001\n    at navigate (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:120:37)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)\n    at async FrameManager.navigateFrame (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:94:17)\n    at async Frame.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:406:12)\n    at async Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:12)\n    at async World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:111:15)\n    at Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:49)\n    at Page.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:112:23)\n    at World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I have filtered the items by size \"L\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:85"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I add the items to cart",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:93"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The items have the correct size \"L\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:98"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 205000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "filtering;filter-items-by-size",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Filter items by size",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 151000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have opened \"http://localhost\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:41"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4027000000,
+              "error_message": "Error: net::ERR_CONNECTION_REFUSED at http://localhost:3001\n    at navigate (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:120:37)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)\n    at async FrameManager.navigateFrame (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:94:17)\n    at async Frame.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:406:12)\n    at async Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:12)\n    at async World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:111:15)\n    at Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:49)\n    at Page.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:112:23)\n    at World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I have filtered the items by size \"XL\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:85"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I add the items to cart",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:93"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The items have the correct size \"XL\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:98"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 207000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "filtering;filter-items-by-size",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Filter items by size",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 178000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have opened \"http://localhost\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:41"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4029000000,
+              "error_message": "Error: net::ERR_CONNECTION_REFUSED at http://localhost:3001\n    at navigate (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:120:37)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)\n    at async FrameManager.navigateFrame (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:94:17)\n    at async Frame.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:406:12)\n    at async Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:12)\n    at async World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:111:15)\n    at Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:49)\n    at Page.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:112:23)\n    at World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I have filtered the items by size \"XXL\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:85"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I add the items to cart",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:93"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The items have the correct size \"XXL\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:98"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 204000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    Validation of all sorting methods",
+    "keyword": "Feature",
+    "name": "Sorting",
+    "line": 1,
+    "id": "sorting",
+    "tags": [],
+    "uri": "tests\\features\\sorting.feature",
+    "elements": [
+      {
+        "id": "sorting;order-by-sorting-methods",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Order by sorting methods",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 177000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have opened \"http://localhost\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:41"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4032000000,
+              "error_message": "Error: net::ERR_CONNECTION_REFUSED at http://localhost:3001\n    at navigate (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:120:37)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)\n    at async FrameManager.navigateFrame (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:94:17)\n    at async Frame.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:406:12)\n    at async Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:12)\n    at async World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:111:15)\n    at Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:49)\n    at Page.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:112:23)\n    at World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I have ordered the items by \"lowestprice\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:47"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "The items are properly ordered by \"lowestprice\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:55"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 201000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sorting;order-by-sorting-methods",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Order by sorting methods",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 159000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have opened \"http://localhost\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:41"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4029000000,
+              "error_message": "Error: net::ERR_CONNECTION_REFUSED at http://localhost:3001\n    at navigate (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:120:37)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)\n    at async FrameManager.navigateFrame (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:94:17)\n    at async Frame.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\FrameManager.js:406:12)\n    at async Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:12)\n    at async World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:5)\n  -- ASYNC --\n    at Frame.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:111:15)\n    at Page.goto (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\Page.js:672:49)\n    at Page.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\node_modules\\puppeteer\\lib\\helper.js:112:23)\n    at World.<anonymous> (C:\\Users\\Alexa\\qa-exercise-alexander-gallen\\tests\\features\\step_definitions\\stepdefs.js:44:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I have ordered the items by \"highestprice\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:47"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "The items are properly ordered by \"highestprice\"",
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:55"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\step_definitions\\stepdefs.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 203000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
