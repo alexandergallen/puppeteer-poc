@@ -42,3 +42,25 @@ Using docker the application will be available under `http://localhost:3001`. Ot
 
 
 <sub>Special thanks to <a href="http://www.jeffersonribeiro.com/">Jefferson Ribeiro</a> and all contributors for this amazing <a href="https://github.com/damonpam/react-shopping-cart/tree/staging">shopping cart.</a></sub>
+
+## Tests
+#### Execution
+testdocker simply passes a variable that specifies the different port, as configured in the script in package.json
+##### With Docker
+```
+npm run testdocker
+```
+##### Without Docker (locally)
+```
+npm test
+```
+#### Tools
+- Cucumber js
+- Puppeteer
+- Chai
+- Cucumber html reporter
+
+#### Overview
+- Feature files can be found under tests/features
+- Step definitions can be found in tests/features/step_defitions
+- Html report gets generated to root (cucumber-html-result.html)
